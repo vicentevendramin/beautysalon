@@ -119,19 +119,7 @@ main {
 
 /*==== SCROLLING CHANGES ======================*/
 #header.scroll {
-  background-color: var(--base-color);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-}
-
-#header.scroll span,
-#header.scroll .icon-menu {
-  color: white;
-}
-
-span,
-.icon-menu,
-.scroll {
-  transition: 0.2s;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 }
 
 /*==== LOGO ======================*/
@@ -356,4 +344,64 @@ nav.show div.icon-close{
 .card title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/*==== TESTIMONIALS ======================*/
+#testimonials {
+  background: white;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.6rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/* SWIPER */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }
