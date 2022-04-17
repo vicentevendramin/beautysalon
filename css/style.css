@@ -515,11 +515,11 @@ footer .social a:hover {
 }
 
 /*==== MEDIA QUERIES ======================*/
-/* extra large devices: 1200 > */
-@media (min-width: 1200px) {
+/* medium devices 767 > */
+@media (min-width: 767px) {
   /* REUSABLE CLASSES */
   .container {
-    max-width: 1120px;
+    max-width: 746px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -538,32 +538,6 @@ footer .social a:hover {
 
   .button {
     height: 3.125rem;
-  }
-
-  /* NAVIGATION */
-  nav .menu {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-  }
-
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-   -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-
-  nav .icon-menu {
-    display: none;
   }
 
   /* LAYOUT */
@@ -596,7 +570,7 @@ footer .social a:hover {
 
   /* SERVICES */
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .card {
@@ -632,17 +606,69 @@ footer .social a:hover {
   }
 
   footer .logo {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
-
-/* large devices 1023 > */
 /* large devices 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+  /* REUSABLE CLASSES */
+  .container {
+    max-width: 912px;
+  }
+
+  /* NAVIGATION */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+   -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
 }
 
-/* medium devices 767 > */
+/* large devices 1023 > */
+@media (min-width: 1023px) {
+  /* REUSABLE CLASSES */
+  .container {
+    max-width: 943px;
+  }
+
+  /* FOOTER */
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
+
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  /* REUSABLE CLASSES */
+  .container {
+    max-width: 1120px;
+  }
+
+  /* SERVICES */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
